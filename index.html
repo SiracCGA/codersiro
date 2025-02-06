@@ -1,1 +1,151 @@
-<h1>Bu site çalışıyoooooooo</h1>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Sitesi Başlığı</title>
+    <style>
+        /* Genel Ayarlar */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        /* Hero Bölümü */
+        .hero {
+            background-color: #0066cc;
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .hero button {
+            background-color: #ff9900;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        .hero button:hover {
+            background-color: #ff7700;
+        }
+
+        /* Hakkımızda ve Hizmetler Bölümü */
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .about, .services {
+            background-color: #fff;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ul li {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Ana Sayfa</a></li>
+                <li><a href="#">Hakkımızda</a></li>
+                <li><a href="#">Hizmetler</a></li>
+                <li><a href="#">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Hoş Geldiniz!</h1>
+            <p>Web sitemize hoş geldiniz. Burada harika içerikler bulabilirsiniz.</p>
+            <button id="ctaButton">Daha Fazla Öğren</button>
+        </section>
+
+        <section class="about">
+            <h2>Hakkımızda</h2>
+            <p>Biz bir teknoloji şirketiyiz ve web geliştirme alanında uzmanız.</p>
+        </section>
+
+        <section class="services">
+            <h2>Hizmetlerimiz</h2>
+            <ul>
+                <li>Web Tasarımı</li>
+                <li>Web Geliştirme</li>
+                <li>SEO Danışmanlık</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Web Sitesi. Tüm Hakları Saklıdır.</p>
+    </footer>
+
+    <script>
+        document.getElementById("ctaButton").addEventListener("click", function() {
+            alert("Daha fazla içerik için bizimle iletişime geçebilirsiniz!");
+        });
+    </script>
+</body>
+</html>
