@@ -1,151 +1,122 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Sitesi Başlığı</title>
-    <style>
-        /* Genel Ayarlar */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #f4f4f4;
-        }
-
-        header {
-            background: #333;
-            color: #fff;
-            padding: 10px 0;
-        }
-
-        nav ul {
-            list-style: none;
-            text-align: center;
-        }
-
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 18px;
-        }
-
-        /* Hero Bölümü */
-        .hero {
-            background-color: #0066cc;
-            color: white;
-            padding: 50px 20px;
-            text-align: center;
-        }
-
-        .hero h1 {
-            font-size: 2.5em;
-        }
-
-        .hero p {
-            font-size: 1.2em;
-            margin-bottom: 20px;
-        }
-
-        .hero button {
-            background-color: #ff9900;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            font-size: 1em;
-        }
-
-        .hero button:hover {
-            background-color: #ff7700;
-        }
-
-        /* Hakkımızda ve Hizmetler Bölümü */
-        section {
-            padding: 40px 20px;
-            text-align: center;
-        }
-
-        .about, .services {
-            background-color: #fff;
-            margin-bottom: 20px;
-        }
-
-        h2 {
-            font-size: 2em;
-            margin-bottom: 20px;
-        }
-
-        ul {
-            list-style: none;
-        }
-
-        ul li {
-            margin: 10px 0;
-            font-size: 1.2em;
-        }
-
-        /* Footer */
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-    </style>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Personal Portfolio #06 | AsmrProg</title>
 </head>
+
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">Ana Sayfa</a></li>
-                <li><a href="#">Hakkımızda</a></li>
-                <li><a href="#">Hizmetler</a></li>
-                <li><a href="#">İletişim</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section class="hero">
-            <h1>Hoş Geldiniz!</h1>
-            <p>Web sitemize hoş geldiniz. Burada harika içerikler bulabilirsiniz.</p>
-            <button id="ctaButton">Daha Fazla Öğren</button>
-        </section>
+    <nav>
+        <div class="logo">
+            <img src="assets/logo.png">
+            <a href="#">AsmrProg</a>
+        </div>
+        <div class="nav-links">
+            <a class="selected" href="index.html">Home</a>
+            <a href="works.html">Works</a>
+            <a href="single-work.html">Single Work</a>
+            <a href="blog.html">Blog</a>
+            <a href="about.html">About</a>
+        </div>
+    </nav>
 
-        <section class="about">
-            <h2>Hakkımızda</h2>
-            <p>Biz bir teknoloji şirketiyiz ve web geliştirme alanında uzmanız.</p>
-        </section>
+    <div class="main">
+        <div class="info">
+            <h1>Hello, I'm Reza, <br>Creative Developer</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit ea doloribus repudiandae quibusdam
+                voluptates non eum perferendis aut.</p>
+            <button>Download Resume</button>
+        </div>
+        <img src="assets/profile-1.png">
+    </div>
 
-        <section class="services">
-            <h2>Hizmetlerimiz</h2>
-            <ul>
-                <li>Web Tasarımı</li>
-                <li>Web Geliştirme</li>
-                <li>SEO Danışmanlık</li>
-            </ul>
-        </section>
-    </main>
+    <div class="recent">
+        <div class="header">
+            <h4>Recent Posts</h4>
+            <a href="blog.html">View all</a>
+        </div>
+        <div class="posts">
+            <div class="post-item">
+                <h3>Making a layout system from scratch</h3>
+                <div class="info">
+                    <h5>12 Jan 2024</h5>
+                    <h5>|</h5>
+                    <h5>Design, Layout</h5>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet pariatur porro quaerat provident
+                    corporis facere ex voluptatibus laudantium voluptates quos.</p>
+            </div>
+            <div class="post-item">
+                <h3>Making a design system from scratch</h3>
+                <div class="info">
+                    <h5>5 Jan 2024</h5>
+                    <h5>|</h5>
+                    <h5>Design, UI, UX</h5>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet pariatur porro quaerat provident
+                    corporis facere ex voluptatibus laudantium voluptates quos.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="separator">
+        <h4>Featured Works</h4>
+    </div>
+
+    <div class="featured">
+        <div class="item">
+            <img src="assets/item-1.jpg">
+            <div class="details">
+                <h3>Capture Screenshots</h3>
+                <div class="item-info">
+                    <div class="year-badge">2023</div>
+                    <h4>JavaScript</h4>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos eos ratione beatae voluptas
+                    aliquam illo maxime.</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="assets/item-2.jpg">
+            <div class="details">
+                <h3>Designing Login Form</h3>
+                <div class="item-info">
+                    <div class="year-badge">2023</div>
+                    <h4>Login Design</h4>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos eos ratione beatae voluptas
+                    aliquam illo maxime.</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="assets/item-3.jpg">
+            <div class="details">
+                <h3>Music Platform UI</h3>
+                <div class="item-info">
+                    <div class="year-badge">2024</div>
+                    <h4>UI Design</h4>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos eos ratione beatae voluptas
+                    aliquam illo maxime.</p>
+            </div>
+        </div>
+    </div>
 
     <footer>
-        <p>&copy; 2025 Web Sitesi. Tüm Hakları Saklıdır.</p>
+        <div class="socials">
+            <i class='bx bxl-facebook-square'></i>
+            <i class='bx bxl-instagram'></i>
+            <i class='bx bxl-twitter'></i>
+            <i class='bx bxl-linkedin-square'></i>
+        </div>
+        <p>Copyright ©2024, All rights reserved.</p>
     </footer>
 
-    <script>
-        document.getElementById("ctaButton").addEventListener("click", function() {
-            alert("Daha fazla içerik için bizimle iletişime geçebilirsiniz!");
-        });
-    </script>
 </body>
+
 </html>
