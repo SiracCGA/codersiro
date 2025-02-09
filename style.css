@@ -7,6 +7,11 @@
     font-family: 'Heebo', sans-serif;
 }
 
+body{
+    /* background: linear-gradient(to right , rgb(255, 255, 255) , rgb(205, 236, 253)); */
+    background: #dbedf2;
+}
+
 a{
     text-decoration: none;
     color: #000;
@@ -20,7 +25,7 @@ img{
 
 nav{
     padding: 20px 148px;
-    background-color: #fff;
+    background: linear-gradient(to left , rgb(255, 255, 255) , rgb(205, 236, 253));;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -104,7 +109,7 @@ nav .nav-links a.selected{
 
 .recent{
     padding: 60px 148px;
-    background-color: #dbedf2;
+    background-color: #fff;
 }
 
 .recent .header{
