@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Home Assistant | Coder Siro</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <!-- <img src="assets/logo.png"> -->
+            <a href="#">CoderSiro</a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Ev</a>
+            <a href="works.html">İşler</a>
+            <a href="blog.html">Blog</a>
+            <a href="about.html">Hakkımda</a>
+        </div>
+    </nav>
+
+    <h1 class="page-title">Raspberry ile HomeAsisstant Sayesinde Akıllı Ev Yapımı</h1>
+
+    <div class="content">
+        <div class="post">
+        <h2>1 - SD kart hazırlama</h2>
+        <p>İlk önce <a href="https://www.raspberrypi.com/software/">https://www.raspberrypi.com/software/</a> bu siteden işletim sisteminize uygun olan 
+            "Raspberry Pi Imager" uygulamasını indirin. - İndirdikten sonra uygulamayı başlatın. Başlattıktan sonra Sahip
+            olduğunuz "Raspberry Pi"ın modelini seçin. 
+        </p>
+        <img src="assets/imager.png">
+        
+        <p>İndirdikten sonra uygulamayı başlatın. Başlattıktan sonra "CHOOSE DEVICE" yada "CİHAZ SEÇİN" tuşuna tıklayıp Sahip olduğunuz "Raspberry Pi"ın modelini seçin.</p>
+        <img src="assets/imager-1.webp">
+        
+        <p>Seçtikten sonra "CHOOSE OS" yada "İŞLETİM SİSTEMİ SEÇİN" tuşuna tıklayın.</p>
+        <img src="assets/imager-2.webp">
+
+        <p>Açılan menüden "Other specific-purpose OS" tuşuna tıklayın.</p>
+        <img src="assets/imager-3.webp">
+
+        <p>Daha sonra "Home assistants and home automation" tuşuna tıklayın.</p>
+        <img src="assets/imager-4.webp">
+
+        <p>Açılan pencereden "Home Assistant"ı seçin.</p>
+        <img src="assets/imager-5.webp">
+
+        <p>Yine açılan pencereden "Home Assistant OS"i seçin.</p>
+        <img src="assets/imager-6.webp">
+        
+
+        <p>Bilgisayarınıza bir sd kart takın. Bu seferde "CHOOSE STORAGE" yada "SD KARSEÇİN" tuşuna tıklayıp taktığınız sd kartı seçin.</p>
+        <img src="assets/imager-7.webp">
+
+        <p>Ve "NEXT" tuşuna tıklayın. Ve yazdırmasını bekleyin.</p>
+        <img src="assets/imager-8.webp">
+
+        <h2>2 - İlk kurulum</h2>
+
+        <p>SD kartınızı Raspberry Pi'nize takın ve ethernet kablosuyla internete bağlayın. Raspberry'nize güç verin. Bilgisayarınızdan "http://homeassistant.local:8123" sitesine gidin.
+        Eğer "Siteye Ulaşılamıyor"  hatası veya aşağıdaki gibi bir ekran görüyorsanız en az 20 dakika beklemeyi deneyin.</p>
+        <img src="assets/site-1.webp">
+
+        <p>Home Assistant'ın ilk önyüklemesi tamamlandıktan sonra web tarayıcınızı yenilemeniz gerekebilir.</p>
+        <p>İlk olarak sizden Home Assistant yazılımı için bir kullanıcı oluşturmanız istenecektir.</p>
+        <p>Bilgilerinizi girin. Ve ardından "CREATE ACCOUNT" tuşuna tıklayın.</p>
+        <img src="assets/site-2.webp">
+
+        <p>Bir sonraki adımda size evinize bir ad vermeniz istenecektir.Ayrıca konumunuzu ayarlamanız gerekecektir. 
+            Konumunuzu ayarlamak, yazılımın güneşin konumunu hesaba katan otomasyon görevlerini ele almasına yardımcı olur.</p>
+        
+        <p>Sonra, kullandığınız birim sistemini seçmeniz gerekir .Varsayılan olarak bu, "Metric" olarak ayarlanır.</p>
+        <p>İşlem tamamlandıktan sonra "NEXT" tuşuna tıklayın.</p>
+        <img src="assets/site-3.webp">
+
+        <p>Artık Home Assistant yazılımının daha önce algıladığı cihazların bir listesi karşınıza çıkacak. "+" düğmesine basarak cihazları ekleyebilirsiniz veya "FINISH" 
+            tuşuna tıklayarak devam edebilir siniz.
+        </p>
+        <img src="assets/site-4.webp">
+
+        <p>Artık Raspberry Pi'nizde Home Assistant yazılımının ilk kurulumunu başarıyla tamamladınız.</p>
+        <p>Artık varsayılan Home Assistant panosunu göreceksiniz; ne kadar çok entegrasyon eklerseniz panonuzda o kadar çok bilgi göreceksiniz.</p>
+
+        <h2>3 - Ek Entegrasyonlar Ekleme</h2>
+        <p>Ek entegrasyonlar eklemek için kenar çubuğundaki "Configuration" öğesine tıklayın.</p>
+        <img src="assets/site-5.webp">
+
+        <p>Sırada  "Integrations" kısmına tıklamak var.</p>
+        <img src="assets/site-6.webp">
+
+        <p>Bir sonraki ekranda, Home Assistant'ın Raspberry Pi'nizden otomatik olarak algıladığı tüm cihazları göreceksiniz ( 1. )</p>
+        <p>Belirli bir cihazı veya entegrasyonu görmüyorsanız, ekranın sağ alt köşesindeki artı simgesine tıklayarak bunları kendiniz ekleyebilirsiniz. ( 2. )</p>
+        <p>Bu, Home Assistant yazılımı aracılığıyla kullanılabilen farklı entegrasyonları aramanıza olanak tanıyan bir arama menüsü açacaktır.</p>
+        <img src="assets/site-7.webp">
+
+    </div>
+</div>
+
+</body>
+
+</html>

@@ -107,6 +107,18 @@ nav .nav-links a.selected{
     border-radius: 140px;
 }
 
+.post{
+    width: 50%;
+}
+
+.post a{
+    color: #303f9f;
+}
+
+.post img{
+    width: 100%;
+}
+
 .recent{
     padding: 60px 148px;
     background-color: #fff;
