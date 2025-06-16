@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
-    <title>Blog Sayfası | Coder Siro</title>
+    <title>İşler Sayfası | Coder Siro</title>
 </head>
 
 <body>
@@ -18,106 +18,40 @@
         </div>
         <div class="nav-links">
             <a href="index.html">Ev</a>
-            <a href="works.html">İşler</a>
             <a class="selected" href="blog.html">Blog</a>
+            <a href="raspberry.html">Raspberry</a>
             <a href="about.html">Hakkımda</a>
         </div>
     </nav>
 
-
-    <h1 class="page-title">Blog</h1>
+    <h1 class="page-title">İşler</h1>
 
     <div class="content">
-        <div class="post-list">
-            <div class="post-item">
-                <h3>Raspberry Pi 5 ile Ev Serveri Yaptım!!!</h3>
-                <div class="info">
-                    <h5>20 Ocak 2025</h5>
-                    <h5>|</h5>
-                    <h5>Teknoloji</h5>
+        <div class="works-list">
+            <div class="item">
+                <img src="assets/item-2.jpg">
+                <div class="details">
+                    <a href="post2.html"><h3>USB ile Taşınabilir PC Yapımı</h3></a>
+                    <div class="item-info">
+                        <div class="year-badge">2025</div>
+                        <h4>Bilgisayar</h4>
+                    </div>
+                    <p>USB ye Kali Live kurarak taşınabilir PC yapın! Nasıl yapıldığını merak ediyorsanız tıklayın!</p>
                 </div>
-                <p>Raspberry pi ile ev serveri yaptım bu server sayesinde kendi github'ınızı yapabilir, dosya senkronizasyonu yapabilir, yapay 
-                    zekalarınızı internetsiz kullanabilirsiniz..</p>
-
-                <div class="buttons">
-                    <button onclick="Post1_copy1()"><i class='bx bx-link-alt'></i></button>
-                    <button onclick="Post1_copy2()"><i class='bx bx-copy'></i></button>
-                </div>
-
             </div>
-            <div class="post-item">
-                <h3>Raspberry ile Kendi Github'ımı kurdum!</h3>
-                <div class="info">
-                    <h5>20 Mart 2025</h5>
-                    <h5>|</h5>
-                    <h5>Teknoloji</h5>
+            <div class="item">
+                <img src="assets/item-1.png">
+                <div class="details">
+                    <a href="post1.html"><h3>Raspberry ile HomeAsisstant Sayesinde Akıllı Ev Yapımı</h3></a>
+                    <div class="item-info">
+                        <div class="year-badge">2025</div>
+                        <h4>Teknoloji</h4>
+                    </div>
+                    <p>Raspberry pi 5'e HomeAssistant kurup evinizi akıllandırın! Nasıl yapıldığını merak ediyorsanız tıklayın!</p>
                 </div>
-                <p>Raspberry'de kurulu olan ev serverıma Gitea kurdum.Gitea kendi sunucunuzu kullanarak Github benzeri birşey yapmamıza olanak tanır.
-                    Bende bunun sayesinde kendi Github'ımı yaptım ve cloudflared ile <a href="https://git.codersiro.xyz">git.codersiro.xyz</a> sitesine
-                    bağladım.
-                </p>
-
-                <div class="buttons">
-                    <button onclick="Post2_copy1()"><i class='bx bx-link-alt'></i></button>
-                    <button onclick="Post2_copy2()"><i class='bx bx-copy'></i></button>
-                </div>
-
             </div>
-            <div class="post-item">
-                <h3>Siteme Raspberry'yi Tunnel ile Bağladım!</h3>
-                <div class="info">
-                    <h5>23 Mart 2025</h5>
-                    <h5>|</h5>
-                    <h5>Teknoloji</h5>
-                </div>
-                <p>kendi yapmış olduğum yapay zeka Alfabot'u Raspberry'ye gömüp Raspberry'yi cloudflared ile 
-                    <a href="https://ai.codersiro.xyz">ai.codersiro.xyz</a> sitesine bağladım. Bu sayede bu site üzerinden Alfabot ile mesajlaşabiliyorsunuz.
-                </p>
-
-                <div class="buttons">
-                    <button onclick="Post3_copy1()"><i class='bx bx-link-alt'></i></button>
-                    <button onclick="Post3_copy2()"><i class='bx bx-copy'></i></button>
-                </div>
-
-            </div>
-
         </div>
     </div>
-    <script>
-        function Post1_copy1() {
-
-            navigator.clipboard.writeText
-                ("https://codersiro.xyz/blog.html");
-        }
-        function Post1_copy2() {
-
-            navigator.clipboard.writeText
-                ("Raspberry ile Kendi Github'ımı kurdum! \nRaspberry pi ile ev serveri yaptım bu server sayesinde kendi github'ınızı yapabilir, dosya senkronizasyonu yapabilir, yapayzekalarınızı internetsiz kullanabilirsiniz..");
-        }
-
-        function Post2_copy1() {
-
-            navigator.clipboard.writeText
-                ("https://codersiro.xyz/blog.html");
-        }
-        function Post2_copy2() {
-
-            navigator.clipboard.writeText
-                ("Raspberry Pi 5 ile Ev Serveri Yaptım!!! \nRaspberry'de kurulu olan ev serverıma Gitea kurdum.Gitea kendi sunucunuzu kullanarak Github benzeri birşey yapmamıza olanak tanır.Bende bunun sayesinde kendi Github'ımı yaptım ve cloudflared ile https://git.codersiro.xyz sitesine bağladım.");
-        }
-
-
-        function Post3_copy1() {
-
-            navigator.clipboard.writeText
-                ("https://codersiro.xyz/blog.html");
-        }
-        function Post3_copy2() {
-
-            navigator.clipboard.writeText
-                ("Siteme Raspberry'yi Tunnel ile Bağladım! \nkendi yapmış olduğum yapay zeka Alfabot'u Raspberry'ye gömüp Raspberry'yi cloudflared ile https://ai.codersiro.xyz sitesine bağladım. Bu sayede bu site üzerinden Alfabot ile mesajlaşabiliyorsunuz.");
-        }
-    </script>
 
 </body>
 
