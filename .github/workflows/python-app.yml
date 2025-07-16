@@ -25,4 +25,4 @@ jobs:
         python-version: "3.10"
     - name: Run
       run: |
-        python -c """print("Hello!")"""
+        python -c """print('Hello!')"""
